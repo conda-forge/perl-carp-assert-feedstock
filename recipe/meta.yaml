@@ -1,20 +1,30 @@
-{% set name = "perl-carp-assert" %}
 {% set version = "0.21" %}
 {% set sha256 = "924f8e2b4e3cb3d8b26246b5f9c07cdaa4b8800cef345fa0811d72930d73a54e" %}
 
 package:
-  name: {{ name }}
+  name: perl-carp-assert
   version: {{ version }}
 
 source:
-  url: https://cpan.metacpan.org/authors/id/N/NE/NEILB/Carp-Assert-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  - url: https://cpan.metacpan.org/authors/id/N/NE/NEILB/Carp-Assert-{{ version }}.tar.gz
+    sha256: {{ sha256 }}
+  - url: https://raw.githubusercontent.com/Perl/perl5/v5.32.1/Copying
+    sha256: d77d235e41d54594865151f4751e835c5a82322b0e87ace266567c3391a4b912
+  - url: https://raw.githubusercontent.com/Perl/perl5/v5.32.1/Artistic
+    sha256: dd90d4f42e4dcadf5a7c09eea0189d93c7b37ae560c91f0f6d5233ed3b9292a2
 
 build:
-  number: 0
-  skip: true  # [win]
+  number: 1
+  noarch: generic
+  script:
+    - perl Makefile.PL INSTALLDIRS=vendor NO_PERLLOCAL=1 NO_PACKLIST=1
+    - make
+    - make test
+    - make install VERBINST=1
 
 requirements:
+  build:
+    - make
   host:
     - perl
   run:
@@ -26,7 +36,10 @@ test:
 
 about:
   home: http://metacpan.org/pod/Carp::Assert
-  license: perl_5
+  license: GPL-1.0-or-later OR Artistic-1.0-Perl
+  license_file:
+    - Artistic
+    - Copying
   summary: 'Executable comments'
 
 extra:
