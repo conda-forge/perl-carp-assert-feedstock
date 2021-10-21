@@ -1,9 +1,8 @@
-{% set name = "perl-carp-assert" %}
 {% set version = "0.21" %}
 {% set sha256 = "924f8e2b4e3cb3d8b26246b5f9c07cdaa4b8800cef345fa0811d72930d73a54e" %}
 
 package:
-  name: {{ name }}
+  name: perl-carp-assert
   version: {{ version }}
 
 source:
