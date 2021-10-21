@@ -3,7 +3,7 @@ About perl-carp-assert
 
 Home: http://metacpan.org/pod/Carp::Assert
 
-Package license: perl_5
+Package license: GPL-1.0-or-later OR Artistic-1.0-Perl
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/perl-carp-assert-feedstock/blob/master/LICENSE.txt)
 
@@ -13,37 +13,11 @@ Current build status
 ====================
 
 
-<table>
-    
-  <tr>
-    <td>Azure</td>
+<table><tr><td>All platforms:</td>
     <td>
-      <details>
-        <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6586&branchName=master">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/perl-carp-assert-feedstock?branchName=master">
-          </a>
-        </summary>
-        <table>
-          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
-          <tbody><tr>
-              <td>linux_64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6586&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/perl-carp-assert-feedstock?branchName=master&jobName=linux&configuration=linux_64_" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6586&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/perl-carp-assert-feedstock?branchName=master&jobName=osx&configuration=osx_64_" alt="variant">
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </details>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6586&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/perl-carp-assert-feedstock?branchName=master">
+      </a>
     </td>
   </tr>
 </table>
